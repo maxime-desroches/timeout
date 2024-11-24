@@ -1,0 +1,11 @@
+name: 'Timeout'
+description: 'Timeout a job after a certain duration'
+inputs:
+  duration:
+    description: 'Maximum job duration allowed'
+    required: false 
+    default: 60
+runs:
+  using: 'node20'
+  main: 'index.js'
+  post: 'post.js'
