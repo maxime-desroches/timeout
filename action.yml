@@ -1,7 +1,7 @@
 name: 'Timeout'
-description: 'Timeout a job after a certain duration'
+description: 'Fail a job if it took more than `timeout` seconds'
 inputs:
-  duration:
+  timeout:
     description: 'Maximum job duration allowed'
     required: false 
     default: 60
